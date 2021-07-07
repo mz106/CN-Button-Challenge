@@ -38,8 +38,13 @@ body {
 }
 
 .container__link--small:hover {
+    cursor: pointer;
     transform: rotate(360deg);
     transition-timing-function: cubic-bezier(5, 3, 1);
+}
+
+.container__link--small:focus {
+    background-color: blue;
 }
 
 .container__middle--small {
@@ -59,8 +64,15 @@ body {
     object-fit: fill;
 }
 
+
+.container__logo--small:hover {
+    cursor: pointer;
+}
+
+
+
 .link__icon--medium {
-    object-fit: fill;
+    width: 100%;
 }
 
 .red {
@@ -75,6 +87,19 @@ body {
     border-radius: 50%;
 }
 
+img {
+    border-radius: 80%;
+    object-fit: fill;
+}
+
+i {
+    color: black;
+}
+
+i:hover {
+    color: blue;
+}
+
 /* .rotate-clockwise {
     transform: rotate(360deg);
     transition: transform 5s linear;
@@ -85,181 +110,6 @@ body {
     transition: transform 5s linear;
 } */
 
-@keyframes rotateClockwise {
-    from {
-        transform: rotate(0deg);
-    }
 
-    to {
-        transform: rotate(359deg);
-    }
-}
-
-.rotate-clockwise {
-    
-    animation: rotateClockwise 30s infinite linear;
-}
-
-@keyframes rotateAntiClockwise {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(-359deg);
-    }
-}
-
-.rotate-anticlockwise {
-    
-    animation: rotateAntiClockwise 10s infinite linear;
-}
-
-@keyframes rotateIcon {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(-359deg);
-    }
-}
-
-.rotate-icon {
-    
-    animation: rotateIcon 10s infinite linear;
-}
-
-@keyframes spin {
-    from {
-        transform: rotateY(0deg);
-        
-    }
-
-    50% {
-      transform: rotateY(150deg);
-      
-  }
-
-  from {
-      transform: rotateY(0deg);
-      
-  }
-}
-
-.spin:hover {
-    animation: spin 1s;
-    cursor: pointer;
-}
-
-@keyframes squash {
-    from {
-        transform: scale3d(1, 1, 1);
-    }
-
-    30% {
-        transform: scale3d(1.25, 0.75, 1);
-    }
-
-    40% {
-        transform: scale3d(0.75, 1.25, 1);
-    }
-
-    50% {
-        transform: scale3d(1.15, 0.85, 1);
-    }
-
-    65% {
-        transform: scale3d(0.85, 1.15, 1);
-    }
-
-    75% {
-        transform: scale3d(1.15, 0.85, 1);
-    }
-
-    to {
-        transform: scale3d(1, 1, 1);
-    }
-}
-
-.squash:hover {
-    animation: squash 1s;
-    cursor: pointer;
-}
-
-@keyframes shake {
-    from {
-        transform: rotate(0);
-    }
-
-    10% {
-        transform: rotate(10deg);
-    }
-
-    20% {
-        transform: rotate(-20deg);
-    }
-
-    30% {
-        transform: rotate(20deg);
-    }
-
-    40% {
-        transfrom: rotate(-20deg);
-    }
-
-    50% {
-        transform: rotate(20deg);
-    }
-
-    60% {
-        transform: rotate(-20deg);
-    }
-
-    to {
-        transform: rotate(0);
-    }
-}
-
-.shake:hover {
-    animation: shake 0.5s;
-}
-
-@keyframes flip {
-    from {
-        transform: rotateX(0);
-    }
-
-    50% {
-        transform: rotateX(150deg);
-    }
-
-    to {
-        transform: rotateX(0);
-    }
-}
-
-.flip:hover {
-    animation: flip 1s;
-}
-
-
-@keyframes grow {
-    from {
-        transform: scale3d(1, 1, 1);
-    }
-
-    50% {
-        transform: scale3d(1.5, 1.5, 1.5);
-    }
-
-    100% {
-        transform: scale3d(1, 1, 1);
-    }
-}
-
-.grow:hover {
-    animation: grow 1s;
-}
 
 
